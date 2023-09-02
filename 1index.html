@@ -1,150 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="sylesheet" href="style.css">
-  <title>Header</title>
-  <style>
-    header {
-      background-image: linear-gradient(to right, forestgreen, maroon);
-      text-align: center;
-      color: gold;
-      text-shadow: 0 1px 3px black;
-      position: relative;
-    }
-    h1 {
-      font-family: "Comic Sans MS", cursive;
-      font-size: 24px;
-    }
-    p {
-      font-family: "Comic Sans MS", cursive;
-      font-size: 16px;
-      color: black;
-      text-shadow: 0 1px 3px forestgreen;
-    }
-    h2 {
-      font-family: "Comic Sans MS", cursive;
-      font-size: 35px;
-    }
-    h3 {
-      font-family: "Comic Sans MS", cursive;
-      font-size: 18px;
-    }
-    h4 {
-      font-family: "Comic Sans MS", cursive;
-      font-size: 16px;
-    }
-    h5 {
-      font-family: "Comic Sans MS", cursive;
-      font-size: 14px;
-    }
-    h6 {
-      font-family: "Comic Sans MS", cursive;
-      font-size: 12px;
-    }
-
-    a {
-      color: black;
-      text-decoration: none;
-    }
-
-    section {
-      margin: 20px 0;
-    }
-
-    .about-me {
-      background-color: lightgray;
-      padding: 20px;
-    }
-
-    .my-projects {
-      background-color: beige;
-      padding: 20px;
-    }
-
-    .contact-me {
-      background-color: lightblue;
-      padding: 20px;
-    }
-
-    .header-links {
-      text-align: left;
-      margin-left: 20px;
-    }
-
-    .header-links a {
-      padding: 10px;
-      background-color: lightgray;
-      color: black;
-      border-radius: 5px;
-    }
-
-    header img {
-      position: relative;
-      bottom: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
 </head>
 <body>
   <header>
     <h1>Josh Covington</h1>
     <img src="Me.png" />
     <div class="header-links">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
+      <a href="#about-me">About Me</a>
+      <a href="#my-projects">My Projects</a>
+      <a href="#contact-me">Contact Me</a>
     </div>
   </header>
 
-  <section class="about-me">
+  <section id="about-me">
     <h2>About Me</h2>
     <p>I am a beginner programmer looking to improve my skills and share my projects. Feel free look around this website.</p>
   </section>
 
-  <section class="my-projects">
+  <section id="my-projects">
     <h2>My Projects</h2>
-    <div class="my-divider"></div>
-    <h3>Project 1</h3>
-    <p>This is a description of Project 1.</p>
-    <div class="my-divider"></div>
-    <h3>
-        <img src="https://example.com/project1.jpg" alt="Project 1" width="100px" />
-        Project 1
+    <div class="my-projects">
+      <h3>Project 1</h3>
+      <p>This is a description of Project 1.</p>
+      <a href="https://jcovi.github.io/week1/">
+        <img src="https://jcovi.github.io/week1/Develop/assets/images/digital-marketing-meeting.jpg" alt="Project 1" width="100px" />
       </a>
-    </h3>
-    <div class="my-divider"></div>
-    <h3>Project 2</h3>
-    <p>This is a description of Project 2.</p>
-    <div class="my-divider"></div>
-    <h3>
-      <a href="https://example.com/project2.jpg">
-        <img src="https://example.com/project2.jpg" alt="Project 2" width="100px" />
-        Project 2
-      </a>
-    </h3>
-    <div class="my-divider"></div>
-    <h3>Project 3</h3>
-    <p>This is a description of Project 3.</p>
-    <div class="my-divider"></div>
-    <h3>
-      <a href="https://example.com/project3.jpg">
-        <img src="https://example.com/project3.jpg" alt="Project 3" width="100px" />
-        Project 3
-      </a>
-    </h3>
-    <div class="my-divider"></div>
-    <h3>Project 4</h3>
-    <p>This is a description of Project 4.</p>
-    <div class="my-divider"></div>
+      
+
+      <h3>Project 2</h3>
+      <p>This is a description of Project 2.</p>
+      <img src="https://example.com/project2.jpg" alt="Project 2" width="100px" />
+
+      <h3>Project 3</h3>
+      <p>This is a description of Project 3.</p>
+      <img src="https://example.com/project3.jpg" alt="Project 3" width="100px" />
+    </div>
   </section>
 
-
-
-
-  <section class="contact-me">
+  <section id="contact-me">
     <h2>Contact Me</h2>
     <a href="#">Email</a>
     <a href="#">LinkedIn</a>
     <a href="#">Twitter</a>
   </section>
 </body>
+<style>
+  @media screen and (max-width: 768px) {
+    .header-links {
+      text-align: center;
+    }
+  
+    .my-projects {
+      flex-direction: column;
+    }
+  }
+  </style>
 </html>
